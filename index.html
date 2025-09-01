@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expo PT -  6° A/B - Divergências em relação ao tema / Mitos e Verdades).</title>
+  <style>
+    /* Estilos básicos para organização */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      background-color: lab(29.71% 54.38 -84.18);
+      color: white;
+      padding: 1em;
+    }
+    nav a {
+      color: #cce6ff;
+      margin-right: 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 1em;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    .foto-depoimentos {
+      display: flex;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    .foto-depoimentos img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    .depoimento {
+      font-style: italic;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1) Cabeçalho/Header -->
+  <header>
+    <h1>Nome do Evento: EXPO PT 2025</h1>
+    <h2>Subtema: <!-- Preencha o título do subtema aqui --> Mitos e Verdades sobre Energia Renovável</h2>
+    <nav>
+      <a href="index.html">Página Principal do Evento</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2) Seção relacionada a turma e projeto -->
+    <section id="turma-projeto">
+      <h3>Turma Apresentadora: <!-- Preencha a turma aqui --> 6° A/B</h3>
+      <h4>Título do Projeto: <!-- Preencha o título do projeto --> Energia Renovável: Mitos e Verdades</h4>
+      <p>
+        <!-- Descrição opcional do projeto -->
+        Nosso projeto busca esclarecer os principais mitos e verdades sobre as fontes de energia renovável, mostrando sua importância para o futuro sustentável.
+      </p>
+      <div class="foto-depoimentos">
+        <!-- Espaço para foto -->
+        <img src="foto-turma.jpg" alt="Foto da turma 6° A/B" />
+        <!-- Depoimentos opcionais -->
+        <div class="depoimento">
+          <p>"Aprendemos muito sobre como a energia solar pode transformar nosso planeta!" - João, representante da turma</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Seção criativa relacionada ao subtema -->
+    <section id="conteudo-criativo">
+      <h3>Conteúdos Relacionados ao Subtema</h3>
+      <!-- Exemplos: texto, infográfico, vídeo, quiz -->
+      <article>
+        <h4>Infográfico: Fontes de Energia Renovável</h4>
+        <img src="infografico-energia.jpg" alt="Infográfico sobre fontes de energia renovável" style="max-width:100%;height:auto;" />
+      </article>
+
+      <article>
+        <h4>Vídeo Curto: Como funciona a energia solar?</h4>
+        <video controls width="320">
+          <source src="video-energia-solar.mp4" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </article>
+
+      <article>
+        <h4>Quiz: Verdadeiro ou Falso?</h4>
+        <form>
+          <p>1. A energia eólica é uma fonte renovável. <br />
+            <input type="radio" id="q1v" name="q1" value="verdadeiro" />
+            <label for="q1v">Verdadeiro</label><br />
+            <input type="radio" id="q1f" name="q1" value="falso" />
+            <label for="q1f">Falso</label>
+          </p>
+          <p>2. A energia solar polui o meio ambiente. <br />
+            <input type="radio" id="q2v" name="q2" value="verdadeiro" />
+            <label for="q2v">Verdadeiro</label><br />
+            <input type="radio" id="q2f" name="q2" value="falso" />
+            <label for="q2f">Falso</label>
+          </p>
+          <button type="submit">Enviar Respostas</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- 4) Rodapé/Footer -->
+  <footer>
+    <p>Créditos: Equipe de Desenvolvimento do Site - EXPO PT 2025</p>
+  </footer>
+
+</body>
+</html>
